@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Standard Calculator -->
+
+    <div class="main">
+        <div class="inner">
+            <input type="text" name="" id="field" class="field">
+            <table>
+                <tr>
+                    <td class="clr" onclick="clearInput()">C</td>
+                    <td class="digit" id="digit" onclick="getNum('*100')">%</td>
+                    <td class="digit" id="digit" onclick="getNum('/')">/</td>
+                    <td class="digit" id="digit" onclick="getNum('*')">*</td>
+                </tr>
+                <tr>
+                    <td class="digit" id="digit" onclick="getNum('7')">7</td>
+                    <td class="digit" id="digit" onclick="getNum('8')">8</td>
+                    <td class="digit" id="digit" onclick="getNum('9')">9</td>
+                    <td class="digit" id="digit" onclick="getNum('-')">-</td>
+                </tr>
+                <tr>
+                    <td class="digit" id="digit" onclick="getNum('6')">6</td>
+                    <td class="digit" id="digit" onclick="getNum('5')">5</td>
+                    <td class="digit" id="digit" onclick="getNum('4')">4</td>
+                    <td class="digit" id="digit" onclick="getNum('+')">+</td>
+                </tr>
+                <tr>
+                    <td class="digit" id="digit" onclick="getNum('3')">3</td>
+                    <td class="digit" id="digit" onclick="getNum('2')">2</td>
+                    <td class="digit" id="digit" onclick="getNum('1')">1</td>
+                    <td class="equals" onclick="result()" rowspan="2">=</td>
+                </tr>
+                <tr>                    
+                    <td class="digit" id="digit" onclick="getNum('0')">0</td>
+                    <td class="digit" id="digit" onclick="getNum('00')">00</td>
+                    <td class="digit" id="digit" onclick="getNum('.')">.</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <!-- Compact Calculator -->
+
+    <!-- <div class="main">
+        <div class="inner">
+            <input type="text" name="" id="field" class="field">
+            <table>
+                <tr>
+                    <td class="digit" id="digit" onclick="getNum('7')">7</td>
+                    <td class="digit" id="digit" onclick="getNum('8')">8</td>
+                    <td class="digit" id="digit" onclick="getNum('9')">9</td>
+                    <td class="digit" id="digit" onclick="getNum('/')">/</td>
+                </tr>
+                <tr>
+                    <td class="digit" id="digit" onclick="getNum('6')">6</td>
+                    <td class="digit" id="digit" onclick="getNum('5')">5</td>
+                    <td class="digit" id="digit" onclick="getNum('4')">4</td>
+                    <td class="digit" id="digit" onclick="getNum('*')">*</td>
+                </tr>
+                <tr>
+                    <td class="digit" id="digit" onclick="getNum('3')">3</td>
+                    <td class="digit" id="digit" onclick="getNum('2')">2</td>
+                    <td class="digit" id="digit" onclick="getNum('1')">1</td>                    
+                    <td class="digit" id="digit" onclick="getNum('-')">-</td>
+                </tr>
+                <tr>                    
+                    <td class="clr" onclick="clearInput()">C</td>
+                    <td class="digit" id="digit" onclick="getNum('0')">0</td>
+                    <td class="equals" onclick="result()">=</td>
+                    <td class="digit" id="digit" onclick="getNum('+')">+</td>
+                </tr>
+            </table>
+        </div>
+    </div> -->
+</body>
+<script src="app.js"></script>
+
+</html>
